@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62%;;
+}
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    background-color:goldenrod;
+    animation: changeBg 5s linear infinite ;
+    display: grid;
+    place-items: center;
+    
+
+}
+@keyframes changeBg {
+    0%{
+        background-color: bisque;
+    }
+    20%{
+        background-color: yellowgreen;
+
+    }
+    40%{
+        background-color: burlywood;
+    }
+    60%{
+        background-color: violet;
+    }
+    80%{
+        background-color: red;
+    }
+    100%
+    {
+        background-color: goldenrod;
+    }
+}
+.music-box{
+    width: 40rem;
+    height: 55rem;
+    padding: 3rem;
+    background-color: black;
+    border-radius: 2rem;
+    
+    box-shadow: 4 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.music-box #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 00.5rem;
+    color: white;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+ 
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+
+}
+
+.music-box #artist{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+.image-container{
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+}
+img{
+    border-radius: 4%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0.3 rem 0.5rem rgba(0,0,0,0.2);
+
+}
+.music-controls{
+    width : 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+.music-controls .fa-solid{
+    font-size: 2rem;
+    cursor:pointer;
+    color:blanchedalmond;
+
+}
+.music-controls .main-button{
+    width:5rem;
+    height: 5rem;
+    border-radius: 40%;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-controls .fa-solid:hover{
+    color: grey;
+
+}
+.music-controls.fa-play:hover{
+    background-color: aliceblue;
+    color: black;
+}
